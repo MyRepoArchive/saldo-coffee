@@ -7,193 +7,175 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-      href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Courier+Prime:wght@400;700&family=Rokkitt&display=swap"
+      rel="stylesheet"
+      />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
-      rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;600;700&display=swap"
-      rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet">
     <style>
-    html, body {
-      display: flex;
-      height: 100vh;
-      width: 100vw;
-      align-items: center;
-      justify-content: center;
-      background-color: #797e94;
-      padding: 0;
-      margin: 0;
-      background-color: #00000000;
-    }
+      html, body {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        background-color: #e7cb6f8f;
+      }
 
-    * {
-      box-sizing: border-box;
-    }
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
 
-    #background-full {
-      background-color: #23252e;
-      width: 490px;
-      height: 250px;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: solid 3px white;
-    }
+      #background-full {
+        background-color: #23252e;
+        width: 490px;
+        height: 250px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 3px white;
+      }
 
-    #background-lv1 {
-      width: 460px;
-      height: 220px;
-      border-radius: 20px;
-      border: 3px dashed #45fa81;
-      display: grid;
-      padding: 20px 20px 0;
-      grid-template-areas: "profile titleLocal"
-                           "profile local"
-                           "titleGlobal titleGlobal"
-                           "global global";
-      grid-template-rows: 17px 83px 17px 1fr;
-      grid-template-columns: 100px 1fr;
-    }
+      #background-lv1 {
+        width: 460px;
+        height: 220px;
+        border-radius: 20px;
+        border: 3px dashed #45fa81;
+        display: grid;
+        padding: 20px 20px 0;
+        grid-template-areas: 
+          "profile titleLocal"
+          "profile local"
+          "titleGlobal titleGlobal"
+          "global global";
+        grid-template-rows: 17px 83px 17px 1fr;
+        grid-template-columns: 100px 1fr;
+      }
 
-    #perfil-foto {
-      width: 100px;
-      height: 100px;
-      border-radius: 10px;
-      border: 3px solid #45fa81;
-      grid-area: "profile";
-    }
+      #perfil-foto {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        border: 3px solid #45fa81;
+        grid-area: "profile";
+      }
 
-    #saldo-local-title {
-      color: white;
-      font-family: Comfortaa;
-      font-weight: 600;
-      font-size: 12pt;
-      margin: 0;
-      display: inline-block;
-      vertical-align: top;
-      text-align: center;
-      grid-area: titleLocal;
-    }
+      #saldo-local-title {
+        color: white;
+        font-family: Comfortaa;
+        font-weight: 600;
+        font-size: 12pt;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        grid-area: titleLocal;
+      }
 
-    #saldo-local {
-      font-size: 30pt;
-      font-family: 'Courier Prime';
-      letter-spacing: -2px;
-      color: white;
-      text-align: center;
-      grid-area: local;
-      margin: auto auto;
-      font-weight: bold;
-    }
+      #saldo-local {
+        font-size: 30pt;
+        font-family: 'Courier Prime';
+        letter-spacing: -2px;
+        color: white;
+        text-align: center;
+        grid-area: local;
+        margin: auto auto;
+        font-weight: bold;
+      }
 
-    #saldo-global-title {
-      color: white;
-      font-family: Comfortaa;
-      font-weight: 600;
-      font-size: 12pt;
-      margin: 0;
-      display: inline-block;
-      text-align: center;
-      grid-area: titleGlobal;
-    }
+      #saldo-global-title {
+        color: white;
+        font-family: Comfortaa;
+        font-weight: 600;
+        font-size: 12pt;
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+        grid-area: titleGlobal;
+      }
 
-    #saldo-local-sifrao, #saldo-global-sifrao {
-      margin-right: 7px;
-      font-family: Rokkitt;
-      font-weight: normal;
-      letter-spacing: 0;
-    }
+      #saldo-local-sifrao, #saldo-global-sifrao {
+        margin-right: 7px;
+        font-family: Rokkitt;
+        font-weight: normal;
+        letter-spacing: 0;
+      }
 
-    #saldo-local-sifrao, #saldo-local-float {
-      font-size: 20pt;
-    }
+      #saldo-local-sifrao, #saldo-local-float {
+        font-size: 20pt;
+      }
 
-    #saldo-global-sifrao, #saldo-global-float {
-      font-size: 15pt;
-    }
+      #saldo-global-sifrao, #saldo-global-float {
+        font-size: 15pt;
+      }
 
-    #saldo-local-float, #saldo-global-float {
-      font-weight: normal;
-    }
+      #saldo-local-float, #saldo-global-float {
+        font-weight: normal;
+      }
 
-    #saldo-local-virgula, #saldo-global-virgula {
-      font-weight: 100;
-      letter-spacing: -7px;
-      font-size: 0.6em;
-    }
+      #saldo-local-virgula, #saldo-global-virgula {
+        font-weight: 100;
+        letter-spacing: -7px;
+        font-size: 0.6em;
+      }
 
-    #saldo-global {
-      font-size: 25pt;
-      letter-spacing: -2px;
-      font-family: 'Courier Prime';
-      color: white;
-      text-align: center;
-      grid-area: global;
-      margin: auto auto;
-      font-weight: 700;
-    }
+      #saldo-global {
+        font-size: 25pt;
+        letter-spacing: -2px;
+        font-family: 'Courier Prime';
+        color: white;
+        text-align: center;
+        grid-area: global;
+        margin: auto auto;
+        font-weight: 700;
+      }
 
-    .sinal-menor {
-      font-weight: 200;
-      color: rgba(255, 255, 255, 0.501);
-    }
+      .sinal-menor {
+        font-weight: 200;
+        color: rgba(255, 255, 255, 0.501);
+      }
 
-    #corpo-chave {
-      background-color: white;
-      border-radius: 50rem;
-      width: 60px;
-      height: 20px;
-      display: block;
-      margin-left: -80px;
-      margin-top: 320px;
-    }
+      #corpo-chave {
+        background-color: white;
+        border-radius: 50rem;
+        width: 60px;
+        height: 20px;
+        display: block;
+        margin-left: -80px;
+        margin-top: 320px;
+      }
 
-    #select-chave {
-      width: 30px;
-      height: 30px;
-      border-radius: 100%;
-      background-color: #45fa81;
-      margin-top: -5px;
-      cursor: pointer;
-      transition: .3s;
-    }
+      #select-chave {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: #45fa81;
+        margin-top: -5px;
+        cursor: pointer;
+        transition: .3s;
+      }
 
-    #input-1, #input-2 {
-      font: inherit;
-      color: inherit;
-      display: inline;
-      background-color: #00000000;
-      border: none;
-      appearance: inherit;
-      padding: 0;
-      letter-spacing: inherit;
-    }
+      #input-1, #input-2 {
+        font: inherit;
+        color: inherit;
+        display: inline;
+        background-color: #00000000;
+        border: none;
+        appearance: inherit;
+        padding: 0;
+        letter-spacing: inherit;
+      }
 
-    #input-1:focus, #input-2:focus {
-      outline: none;
-    }
-  </style>
+      #input-1:focus, #input-2:focus {
+        outline: none;
+      }
+    </style>
   </head>
+
   <body>
     <div id="background-full">
       <div id="background-lv1">
@@ -212,7 +194,8 @@
         <p id="saldo-global"><span id="saldo-global-sifrao">C$</span><span
             id="saldo-global-int"><span class="sinal-menor" style="display:
               none;">-</span><input aria-label="2" type="text" placeholder="0"
-              pattern="/\d+/g" required maxlength="15" id="input-2"></span><span id="saldo-global-virgula">,</span><span
+              pattern="/\d+/g" required maxlength="15" id="input-2"></span><span
+            id="saldo-global-virgula">,</span><span
             id="saldo-global-float">00</span></p>
       </div>
     </div>
